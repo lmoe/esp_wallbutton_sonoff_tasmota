@@ -1,0 +1,29 @@
+{
+    "Main": {
+        "Interface": "wlp0s20f0u2",
+        "Mode": "listen",
+        "MqttHost": "192.168.178.67",
+        "MqttPort": 1883,
+        "MqttClientId": "WallbuttonListener",
+        "TogglePacket": [
+            6,
+            6,
+            6,
+            1,
+            2,
+            3
+        ],
+        "DeviceMap": [
+            {
+                "Mac": "06:06:06:06:06:06",
+                "Topic": "cmnd/sonoff_a/power",
+                "Message": "toggle"
+            },
+            {
+                "Mac": "cc:50:e3:37:1e:ce",
+                "Topic": "cmnd/sonoff_c/power",
+                "Message": "toggle"
+            }
+        ],
+    }
+}
